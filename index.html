@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aman Portfolio</title>
+    <title>Portfolio-1</title>
     <link rel="shortcut icon" href="./images/images.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.1.13/dist/lenis.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
@@ -37,20 +40,28 @@
         >
           <h1 class="text-xl font-bold">A.S</h1>
           <nav class="hidden md:flex space-x-4 font-medium">
-            <a href="#home" class="text-gray-700">Home</a>
-            <a href="#services" class="text-gray-700">Services</a>
-            <a href="#portfolios" class="text-gray-700">Portfolios</a>
-            <a href="#testimonials" class="text-gray-700">Testimonials</a>
+            <a href="index.html" class="text-gray-700">Home</a>
+            <a href="communityServices.html" class="text-gray-700"
+              >Community-Services</a
+            >
+            <a href="awards.html" class="text-gray-700"
+              >Awards & Achievements</a
+            >
+            <a href="academics.html" class="text-gray-700">Academics</a>
+            <a href="Professional-Enrichment.html" class="text-gray-700"
+              >Professional-Enrichment</a
+            >
+            <a href="others.html" class="text-gray-700">Others</a>
           </nav>
-          <button
-            class="hidden md:block bg-yellow-400 text-black px-4 py-2 rounded"
-          >
-            Let's Talk
-          </button>
+          <a href="mailto:amanajaymona@gmail.com" style="text-decoration: none;">
+            <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+              Let's Talk.
+            </button>
+          </a>
         </div>
       </header>
 
-      <main class="container mx-auto py-8 md:py-16 text-center">
+      <main class="container mx-auto py-8 md:py-16">
         <section id="home" class="mb-16">
           <div
             class="flex flex-col md:flex-row-reverse items-center justify-center"
@@ -60,18 +71,19 @@
               class="w-48 h-48 md:w-72 md:h-72 bg-yellow-400 rounded-full overflow-hidden mb-6 md:mb-0"
             >
               <img
-                src="./images/profile.png"
-                alt="Kazim"
-                class="rounded-full w-full h-full object-cover"
+                src="./images/main-portfolio-removebg-preview.png"
+                alt="Aman Semalty"
+                class="rounded-full w-full h-full object-contain"
               />
             </div>
             <div class="flex flex-col justify-start items-start md:w-1/2 p-4">
               <h2 class="text-3xl md:text-4xl font-bold mb-4 text-left">
-                HEY, I'M AMAN SEMALTY, A CREATIVE UI/UX DESIGNER AND DEVELOPER.
+                Hi! I’m Aman Semalty, <br> A curious person who wants to learn and
+                discover more about the world!
               </h2>
-              <p class="text-lg md:text-xl mb-4">
+              <!-- <p class="text-lg md:text-xl mb-4">
                 Designer • Figma • Developer
-              </p>
+              </p> -->
               <div
                 class="space-y-2 md:space-y-0 md:space-x-4 flex flex-col md:flex-row"
               >
@@ -80,18 +92,20 @@
                 >
                   Want to discuss?
                 </button>
-                <button class="bg-yellow-400 text-black px-4 py-2 rounded">
-                  Let's Talk.
-                </button>
+                <a href="mailto:amanajaymona@gmail.com" style="text-decoration: none;">
+                  <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+                    Let's Talk.
+                  </button>
+                </a>
               </div>
             </div>
           </div>
         </section>
-        <div
+        <!-- <div
           data-cursor="-inverse"
           class="w-full h-20 flex items-center bg-[#000000e4] mb-5 overflow-hidden"
         >
-          <div id="reeler" class="flex items-center h-full w-fit">
+          <div id="reeler" class="flex items-center max-[600px]:gap-5 h-full w-fit">
             <div
               class="flex gap-5 justify-center shrink-0 w-[10vw] text-white items-center"
             >
@@ -183,50 +197,81 @@
               <p class="text-xl">Skills</p>
             </div>
           </div>
-        </div>
-        <section id="services" class="mb-16">
-          <h3 class="text-2xl md:text-4xl font-bold mb-3">Expertise courses</h3>
-          <p class="mb-6 font-semibold">Here are the some of my best courses</p>
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 px-4 py-5"
-          >
-            <div
-              data-cursor-text="View PPT"
-              class="cursor-pointer border p-4 md:p-6 font-medium rounded-md bg-[#D9D9D9]"
-            >
-              Clever Harvey's marketing course with Puma
-            </div>
-            <div
-              data-cursor-text="View PPT"
-              class="cursor-pointer border p-4 md:p-6 font-medium rounded-md bg-[#D9D9D9]"
-            >
-              Clever Harvey's Technology course
-            </div>
-            <div
-              data-cursor-text="View PPT"
-              class="cursor-pointer border p-4 md:p-6 font-medium rounded-md bg-[#D9D9D9]"
-            >
-              Clever Harvey 's Entrepreneurship course
-            </div>
-            <div
-              data-cursor-text="View PPT"
-              class="cursor-pointer border p-4 md:p-6 font-medium rounded-md bg-[#D9D9D9]"
-            >
-              Clever Harvey's foundation in marketing course
-            </div>
+        </div> -->
+
+        <section id="services" class="mb-16 h-full flex p-20">
+          <div class="w-1/2 h-full">
+            <h1 class="text-4xl mb-4 font-semibold">About My-Self</h1>
+            <p class="font-medium ">
+              I'm Aman Semalty—witty enough to crack a joke, smart enough to
+              back it up, and jolly enough to enjoy the ride!
+              <br /> <br>
+              The past four years have transformed me from a carefree kid into a
+              more grounded semi-adult. This website showcases a tapestry of my
+              significant experiences and achievements, each thread telling part
+              of my story.
+              <br />
+              <br>
+              I've embraced experimentation across studies, hobbies, and sports.
+              Not everything went as planned; I faced rocky peaks, with some
+              climbs leaving me breathless and others offering stunning views.
+              Each challenge taught me invaluable lessons in resilience and
+              adaptability.
+              <br />
+              <br>
+              Navigating life's rollercoaster has helped me embrace the highs
+              and endure the lows. Every experience, whether a success or a
+              setback, has contributed to my growth, laying the groundwork for
+              my future endeavors and fueling my passion as I move forward.
+            </p>
+          </div>
+          <div class="w-1/2 h-ful">
+            <img class="w-[40vh] h-[60vh] m-auto object-cover" src="./images/portrait.jpg" alt="">
           </div>
         </section>
 
         <section id="portfolios" class="mb-16">
-          <h3 class="text-2xl md:text-4xl font-bold mb-8">Certificates</h3>
-          <p class="font-semibold">Click on the card to see my certificates.</p>
+          <h3 class="text-2xl md:text-4xl font-bold mb-8 text-center">
+            Published Books & Contributions
+          </h3>
+
+          <div class="w-full h-fit p-10 flex">
+            <div class="book-img w-1/2 h-fit">
+              <img
+                class="w-[45vh] h-[60vh] m-auto"
+                src="./images/book cover page .jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="book-content w-1/2">
+              <h4 class="text-2xl font-bold">On Your MARKS, Get SAT, Go!</h4>
+              <h4 class="text-2xl font-bold mt-2">
+                (The Journey: Academics, SAT to My Portfolio)
+              </h4>
+              <p class="font-semibold w-[60%] text-start m-auto mt-5">
+                This book is a memoir that details a teens’ journey and life
+                learning experiences. It is a simple, powerful and motivating
+                journey of self-discovery. "Every one of us has something to
+                offer, lessons to learn, and wisdom to share. Life is not a
+                competition of grand stories but a celebration of the simple
+                moments that make each of us unique. So, my dear friends, it is
+                time to turn the page. I hope you discover something interesting
+                that will make you smile." "I hope that somewhere in this
+                memoir, you will find reflections that resonate with your own
+                life experiences.”
+              </p>
+            </div>
+          </div>
+
+          <!-- <p class="font-semibold">Click on the card to see my certificates.</p>
           <div
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-4 px-4 py-5 text-left"
           >
             <div
               class="border p-4 border-black rounded-md w-full md:w-[50vh] h-auto md:h-[60vh] flex flex-col gap-2"
             >
-              <img class="w-full" src="./images/certificate1.jpg" alt="" />
+              <img class="w-full" src="https://plus.unsplash.com/premium_photo-1712275287670-b05075484b94?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               <h4 class="font-bold">Inspire Awards -Manak</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -237,7 +282,7 @@
             <div
               class="border p-4 border-black rounded-md w-full md:w-[50vh] h-auto md:h-[60vh] flex flex-col gap-2"
             >
-              <img class="w-full" src="./images/certificate1.jpg" alt="" />
+              <img class="w-full" src="https://plus.unsplash.com/premium_photo-1712275287670-b05075484b94?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               <h4 class="font-bold">Inspire Awards -Manak</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -248,7 +293,7 @@
             <div
               class="border p-4 border-black rounded-md w-full md:w-[50vh] h-auto md:h-[60vh] flex flex-col gap-2"
             >
-              <img class="w-full" src="./images/certificate1.jpg" alt="" />
+              <img class="w-full" src="https://plus.unsplash.com/premium_photo-1712275287670-b05075484b94?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               <h4 class="font-bold">Inspire Awards -Manak</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -259,7 +304,7 @@
             <div
               class="border p-4 border-black rounded-md w-full md:w-[50vh] h-auto md:h-[60vh] flex flex-col gap-2"
             >
-              <img class="w-full" src="./images/certificate1.jpg" alt="" />
+              <img class="w-full" src="https://plus.unsplash.com/premium_photo-1712275287670-b05075484b94?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               <h4 class="font-bold">Inspire Awards -Manak</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -270,7 +315,7 @@
             <div
               class="border p-4 border-black rounded-md w-full md:w-[50vh] h-auto md:h-[60vh] flex flex-col gap-2"
             >
-              <img class="w-full" src="./images/certificate1.jpg" alt="" />
+              <img class="w-full" src="https://plus.unsplash.com/premium_photo-1712275287670-b05075484b94?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               <h4 class="font-bold">Inspire Awards -Manak</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -281,7 +326,7 @@
             <div
               class="border p-4 border-black rounded-md w-full md:w-[50vh] h-auto md:h-[60vh] flex flex-col gap-2"
             >
-              <img class="w-full" src="./images/certificate1.jpg" alt="" />
+              <img class="w-full" src="https://plus.unsplash.com/premium_photo-1712275287670-b05075484b94?q=80&w=1882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               <h4 class="font-bold">Inspire Awards -Manak</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -292,10 +337,10 @@
           </div>
           <div class="w-full flex items-center justify-center">
             <button class="px-4 py-2 rounded-md bg-[#FACC15]">View All</button>
-          </div>
+          </div> -->
         </section>
 
-        <section id="Hobbies">
+        <!-- <section id="Hobbies">
           <h3 class="text-2xl md:text-4xl font-bold mb-4">My Hobbies</h3>
           <p class="font-semibold mb-4">
             Here are some Hobbies that I love to do in my free time.
@@ -305,67 +350,48 @@
           >
             <div
               data-cursor-text="View More"
-              class="cursor-pointer border h-20  text-2xl flex items-center justify-between px-16 font-medium rounded-md bg-[#D9D9D9]"
+              class="cursor-pointer border h-20 text-2xl flex items-center justify-between px-10 font-medium rounded-md bg-[#D9D9D9]"
             >
-            <img class="w-[8%]" src="./images/cricket.png" alt="">
-                <p>
-                  Playing Cricket
-
-                </p>
+              <img class="w-[8%]" src="./images/cricket.png" alt="" />
+              <p>Playing Cricket</p>
             </div>
             <div
               data-cursor-text="View More"
-              class="cursor-pointer border h-20  text-2xl flex items-center justify-between px-16 font-medium rounded-md bg-[#D9D9D9]"
+              class="cursor-pointer border h-20 text-2xl flex items-center justify-between px-10 font-medium rounded-md bg-[#D9D9D9]"
             >
-            <img class="w-[8%]" src="./images/books.png" alt="">
-                <p>
-                  Reading Books
-
-                </p>
+              <img class="w-[8%]" src="./images/books.png" alt="" />
+              <p>Reading Books</p>
             </div>
             <div
               data-cursor-text="View More"
-              class="cursor-pointer border h-20  text-2xl flex items-center justify-between px-16 font-medium rounded-md bg-[#D9D9D9]"
+              class="cursor-pointer border h-20 text-2xl flex items-center justify-between px-10 font-medium rounded-md bg-[#D9D9D9]"
             >
-            <img class="w-[8%]" src="./images/camera.png" alt="">
-                <p>
-                  Photography
-
-                </p>
+              <img class="w-[8%]" src="./images/camera.png" alt="" />
+              <p>Photography</p>
             </div>
             <div
               data-cursor-text="View More"
-              class="cursor-pointer border h-20  text-2xl flex items-center justify-between px-16 font-medium rounded-md bg-[#D9D9D9]"
+              class="cursor-pointer border h-20 text-2xl flex items-center justify-between px-10 font-medium rounded-md bg-[#D9D9D9]"
             >
-            <img class="w-[8%]" src="./images/community.png" alt="">
-                <p>
-                  Community Services
-
-                </p>
+              <img class="w-[8%]" src="./images/community.png" alt="" />
+              <p>Community Services</p>
             </div>
             <div
               data-cursor-text="View More"
-              class="cursor-pointer border h-20  text-2xl flex items-center justify-between px-16 font-medium rounded-md bg-[#D9D9D9]"
+              class="cursor-pointer border h-20 text-2xl flex items-center justify-between px-10 font-medium rounded-md bg-[#D9D9D9]"
             >
-            <img class="w-[8%]" src="./images/youtube.png" alt="">
-                <p>
-                  Recording Videos
-
-                </p>
+              <img class="w-[8%]" src="./images/youtube.png" alt="" />
+              <p>Recording Videos</p>
             </div>
             <div
               data-cursor-text="View More"
-              class="cursor-pointer border h-20  text-2xl flex items-center justify-between px-16 font-medium rounded-md bg-[#D9D9D9]"
+              class="cursor-pointer border h-20 text-2xl flex items-center justify-between px-10 font-medium rounded-md bg-[#D9D9D9]"
             >
-            <img class="w-[8%]" src="./images//cricket.png" alt="">
-                <p>
-                  Cricket
-
-                </p>
+              <img class="w-[8%]" src="./images//cricket.png" alt="" />
+              <p>Cricket</p>
             </div>
-            
           </div>
-        </section>
+        </section> -->
       </main>
 
       <footer class="bg-black text-white py-8">
@@ -376,17 +402,15 @@
           <div
             class="space-y-2 md:space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center"
           >
-            <a href=""
-              >aman.business@gmail.com</a
-            >
-            <a href="">Instagram</a>
-            <a href="">LinkedIn</a>
-            <a href="">Facebook</a>
+          <a href="mailto:amanajaymona@gmail.com">amanajaymona@gmail.com</a>
+            <a href="https://www.instagram.com/ambivertsam7?igsh=anp2aTRiMm1nZDV0">Instagram</a>
+            <a href="https://www.linkedin.com/in/aman-semalty-42b9701ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=frxtiNcAAAAJ">Google Scholar</a>
           </div>
         </div>
       </footer>
     </div>
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
@@ -418,18 +442,18 @@
     <script src="https://unpkg.com/split-type"></script>
     <script>
       var cursor = new MouseFollower();
-      const lenis = new Lenis()
+      const lenis = new Lenis();
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
 
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
 
-requestAnimationFrame(raf)
+      requestAnimationFrame(raf);
     </script>
   </body>
 </html>

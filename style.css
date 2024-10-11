@@ -8,7 +8,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 #reeler{
-    animation: reeler linear infinite 40s;
+    animation:  linear infinite 40s;
 }
 
 @keyframes reeler {
