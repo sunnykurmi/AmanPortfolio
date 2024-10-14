@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio-1</title>
+    <title>Aman Portfolio</title>
+
     <link rel="shortcut icon" href="./images/images.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -35,29 +36,21 @@
   <body>
     <div class="font-sans">
       <header class="bg-white shadow">
-        <div
-          class="container mx-auto flex justify-between items-center p-4 md:p-6"
-        >
+        <div class="container mx-auto flex justify-between items-center p-4 md:p-6">
           <h1 class="text-xl font-bold">A.S</h1>
           <nav class="hidden md:flex space-x-4 font-medium">
-            <a href="index.html" class="text-gray-700">Home</a>
-            <a href="communityServices.html" class="text-gray-700"
-              >Community-Services</a
-            >
-            <a href="awards.html" class="text-gray-700"
-              >Awards & Achievements</a
-            >
-            <a href="academics.html" class="text-gray-700">Academics</a>
-            <a href="Professional-Enrichment.html" class="text-gray-700"
-              >Professional-Enrichment</a
-            >
-            <a href="others.html" class="text-gray-700">Others</a>
+            <a id="home-link" href="index.html" class="text-gray-700 hover-underline-animation">Home</a>
+            <a id="community-services-link" href="communityServices.html" class="text-gray-700 hover-underline-animation">Community-Services</a>
+            <a id="awards-link" href="awards.html" class="text-gray-700 hover-underline-animation">Awards & Achievements</a>
+            <a id="academics-link" href="academics.html" class="text-gray-700 hover-underline-animation">Academics</a>
+            <a id="professional-enrichment-link" href="Professional-Enrichment.html" class="text-gray-700 hover-underline-animation">Professional-Enrichment</a>
+            <a id="others-link" href="others.html" class="text-gray-700 hover-underline-animation">Others</a>
           </nav>
-          <button
-            class="hidden md:block bg-yellow-400 text-black px-4 py-2 rounded"
-          >
-            Let's Talk
-          </button>
+          <a href="mailto:amanajaymona@gmail.com" style="text-decoration: none;">
+            <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+              Let's Talk.
+            </button>
+          </a>
         </div>
       </header>
 
@@ -290,21 +283,7 @@
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      var cursor = new MouseFollower();
-      const lenis = new Lenis();
+    <script src="./script.js"></script>
 
-      lenis.on("scroll", (e) => {
-        console.log(e);
-      });
-
-      function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
-    </script>
-    <script src="communityServices.js"></script>
   </body>
 </html>
