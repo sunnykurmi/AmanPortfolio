@@ -1,3 +1,13 @@
+/* body{
+  background-color: #FFDEE9;
+  background-image: linear-gradient(244deg, #FFDEE9 0%, #B5FFFC 100%);
+  
+} */
+
+::selection{
+    background-color: transparent;
+ 
+}
 body::-webkit-scrollbar {
     width: 10px;
     background-color: white;
@@ -21,9 +31,15 @@ body::-webkit-scrollbar-thumb{
     
 }
 
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
+.scrollhidden::-webkit-scrollbar{
+    display: none;
+}
 
 
 
@@ -62,3 +78,110 @@ body::-webkit-scrollbar-thumb{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+
+
+  /* Add this to your existing CSS */
+#mobile-menu {
+  top: -100%;
+  transition: top .7s;
+}
+
+#mobile-menu.open {
+  top: 0;
+}
+
+
+
+
+/* Loader styles */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loader-icon {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid black;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.thumbnail {
+  width: 200px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.7s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Fullscreen Modal */
+.fullscreen-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.523);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add this to your existing CSS */
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fullscreen-modal.show .fullscreen-image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.close {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  font-size: 60px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}

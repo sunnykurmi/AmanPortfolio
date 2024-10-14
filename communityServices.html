@@ -34,321 +34,334 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="font-sans">
-      <header class="bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center p-4 md:p-6">
+    <div id="fullscreen-modal" class="fullscreen-modal">
+      <span class="close">&times;</span>
+      <img id="fullscreen-image" class="fullscreen-image" />
+    </div>
+
+    <div id="loader">
+      <div class="loader-icon"></div>
+    </div>
+    <div  id="scroll-to-top" data-cursor-text="Top Page" class="fixed bg-yellow-500 text-black center h-10 w-10 right-5 bottom-5 rounded-full ">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+    <div class="font-sans overflow-x-hidden">
+      <header class="shadow">
+        <div class="container mx-auto flex justify-between items-center p-4 md:p-6 max-[600px]:hidden">
           <h1 class="text-xl font-bold">A.S</h1>
-          <nav class="hidden md:flex space-x-4 font-medium">
+          <nav class="flex gap-16 font-medium ">
             <a id="home-link" href="index.html" class="text-gray-700 hover-underline-animation">Home</a>
-            <a id="community-services-link" href="communityServices.html" class="text-gray-700 hover-underline-animation">Community-Services</a>
-            <a id="awards-link" href="awards.html" class="text-gray-700 hover-underline-animation">Awards & Achievements</a>
-            <a id="academics-link" href="academics.html" class="text-gray-700 hover-underline-animation">Academics</a>
-            <a id="professional-enrichment-link" href="Professional-Enrichment.html" class="text-gray-700 hover-underline-animation">Professional-Enrichment</a>
+            <a id="community-services-link" href="communityServices.html"
+              class="text-gray-700 hover-underline-animation">Community-Services</a>
+            <a id="awards-link" href="awards.html" class="text-gray-700 hover-underline-animation">Awards &
+              Achievements</a>
+  
             <a id="others-link" href="others.html" class="text-gray-700 hover-underline-animation">Others</a>
           </nav>
-          <a href="mailto:amanajaymona@gmail.com" style="text-decoration: none;">
             <button class="bg-yellow-400 text-black px-4 py-2 rounded">
-              Let's Talk.
+              Download CV
             </button>
-          </a>
+        
+  
+        </div>
+        <div class="min-[600px]:hidden flex items-center justify-between p-4">
+          <h1 class="text-xl font-bold">A.S</h1>
+          <div class="center">
+            <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+              Download CV
+            </button>
+            <i id="menu-icon" class="text-3xl ml-2 ri-menu-line cursor-pointer"></i>
+          </div>
         </div>
       </header>
+      <div id="mobile-menu" class="min-[600px]:hidden fixed bg-[#151515] pb-10 text-white w-full top-[-100%] left-0 z-[99] transition-all duration-1000">
+        <div class="w-full flex items-center justify-end p-5 text-white">
+          <div id="close-icon" class="w-10 h-10 cursor-pointer">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(251,251,251,1)">
+              <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="w-full center flex-col text-4xl gap-5 uppercase">
+          <a id="home-link" href="index.html" class="">Home</a>
+          <a id="community-services-link" href="communityServices.html" class="">Services</a>
+          <a id="awards-link" href="awards.html" class="">Achievements</a>
+          <a id="others-link" href="others.html" class="">Others</a>
+        </div>
+      </div>
 
-      <main class="container mx-auto py-8 md:py-16">
-        <h1 class="text-4xl font-bold text-center">Community-Services</h1>
-        <div class="w-full h-fit pt-10 pl-20">
-          <h1 class="text-2xl font-bold">
-            Interned at Bhuvaneshwari Mahila Ashram
-          </h1>
-          <p class="text-md w-1/2 mt-3">
-            Since 2022, I have volunteered as an Assistant Project Manager at
-            Bhuvaneshwari Mahila Ashram (an NGO), where I contribute to solid
-            waste management, revenue generation, and recycling education. I
-            collected over 50 kg of waste blades from salons and assisted in a
-            project that involved creating bricks from plastic waste, initiating
-            quality control measures in collaboration with the Department of
-            Civil Engineering at IIT Roorkee. My work focuses on promoting
-            sustainable practices and raising awareness about environmental
-            issues within the community.
-          </p>
-
-          <div class="swiper w-[80vw] mt-10 p-20">
-            <div class="swiper-wrapper items-center">
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img1.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img2.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img4.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img5.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img6.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img7.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/Community-Services/Photos-001/img8.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+      <main class="  ">
+        <div class="center w-full mt-10 px-20 max-[600px]:px-5 max-[600px]:mt-0 max-[600px]:flex-col">
+          <div class="w-[40%] center 
+          max-[600px]:hidden
+">
+            <img
+              class="w-[80%]"
+              src="./images/illustration/internship-job-training-illustration_23-2148751280.avif"
+              alt=""
+            />
+          </div>
+          <div class="w-[50%]
+max-[600px]:w-full
+">
+            <h1 class="text-3xl font-semibold mb-5">
+              Interned at Bhuvaneshwari Mahila Ashram
+            </h1>
+            <p class="text-lg text-justify">
+                • Implemented sustainable waste management initiatives, including collection of over 50 kg of waste blades from salons.
+              <br> • Contributed to revenue generation through projects like creating bricks from plastic waste.
+              <br> • Collaborated with IIT Roorkee's Department of Civil Engineering to establish quality control standards for plastic brick production.
+              <br> • Conducted community outreach programs to raise awareness about environmental issues and promote sustainable practices.
+            </p>
+          </div>
+        </div>
+        <div class="px-36 mt-10 max-[600px]:px-5">
+          <div
+          data-cursor-text="Drag" class=" cursor-move w-full flex gap-10 overflow-scroll overflow-y-hidden scrollhidden"
+          >
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img1.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img2.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img3.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img4.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img5.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img6.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img7.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] rounded-x     thumbnail       l object-cover"
+              src="./images/Community-Services/Photos-001/img8.jpg"
+              alt=""
+            />
           </div>
         </div>
 
-        <div class="w-full h-fit pt-10 pl-20">
-          <h1 class="text-2xl font-bold">MY SSF</h1>
-          <p class="text-md w-1/2 mt-3">
-            I was selected for the Swachhta Saarthi Fellowship Category A in
-            2022 by the Office of the Principal Scientific Advisor (PSA),
-            Government of India, and received a grant of INR 6,000. This
-            one-year program focused on environmental sustainability and
-            involved several initiatives, including the preparation and
-            distribution of seed bombs in open land to promote green cover,
-            e-waste collection drives in the school locality to raise awareness
-            about proper disposal, and the preparation of compost pits to
-            encourage organic waste management. I also organized awareness
-            workshops targeting the public and youth to educate them about
-            sustainable practices, waste segregation, and the importance of
-            community involvement in environmental conservation. Through these
-            efforts, I aimed to inspire positive change and foster a sense of
-            responsibility toward our environment within the community.
-          </p>
-
-          <div class="swiper w-[80vw] mt-10 p-20">
-            <div class="swiper-wrapper items-center">
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-2.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-3.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-4.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-5.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-6.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-7.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/ssf-photo/ssf-8.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+        <div class="center w-full mt-20 px-20 max-[600px]:px-5 max-[600px]:mt-10 max-[600px]:flex-col-reverse ">
+          <div class="w-[50%] max-[600px]:w-full">
+            <h1 class="text-3xl font-semibold mb-5">MY SSF</h1>
+            <p class="text-lg text-justify">
+               • Seed bomb distribution to promote green cover.
+               <br> • E-waste collection drives to raise awareness about proper disposal.
+               <br> • Compost pit preparation to encourage organic waste management.
+               <br> • Received a grant of INR 6,000 to support environmental sustainability initiatives.
+            
+              <br> • Awareness workshops to educate the public and youth on sustainable practices,  waste segregation, and community involvement in environmental conservation.
+              <br> • Contributed to fostering a sense of environmental responsibility within the community.
+            </p>
+          </div>
+          <div class="w-[40%] center max-[600px]:hidden">
+            <img
+              class="w-[60%]"
+              src="./images/illustration/cleaning-service-home-janitor-uniform-vector-illustration_852896-35897.avif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="px-36 mt-10 max-[600px]:px-5">
+          <div
+          data-cursor-text="Drag" class=" cursor-move w-full flex gap-10 overflow-scroll overflow-y-hidden scrollhidden"
+          >
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] scale-125 h-[30vh]     thumbnail        object-cover"
+              src="./images/ssf-photo/ssf-1.png"
+              alt=""
+            />
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] h-[30vh] rounded-x     thumbnail       l object-cover"
+              src="./images/ssf-photo/ssf-2.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] h-[30vh] rounded-x     thumbnail       l object-cover"
+              src="./images/ssf-photo/ssf-3.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] h-[30vh] rounded-x     thumbnail       l object-cover"
+              src="./images/ssf-photo/ssf-4.jpeg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] h-[30vh] rounded-x     thumbnail       l object-cover"
+              src="./images/ssf-photo/ssf-5.jpeg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] h-[30vh] rounded-x     thumbnail       l object-cover"
+              src="./images/ssf-photo/ssf-6.jpeg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] h-[30vh] rounded-x     thumbnail       l object-cover"
+              src="./images/ssf-photo/ssf-7.jpeg"
+              alt=""
+            />
           </div>
         </div>
 
-        <div class="w-full h-fit pt-10 pl-20">
-          <h1 class="text-2xl font-bold">Taught English Communication</h1>
-          <p class="text-md w-1/2 mt-3">
-            I volunteered 75 hours tutoring English to Grade 6-8 students in a
-            government school, teaching them English communication in an
-            engaging and fun way. I utilized interactive activities, games, and
-            creative exercises to make learning enjoyable, helping students
-            build their confidence and improve their language skills. My
-            approach focused on practical usage, encouraging them to express
-            themselves and participate actively in discussions.
-          </p>
-
-          <div class="swiper w-[80vw] mt-10 p-20">
-            <div class="swiper-wrapper items-center">
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/English-photos/english-1.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/English-photos/english-2.jpeg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/English-photos/english-3.jpeg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+        <div class="center w-full mt-20 px-20 max-[600px]:px-5 max-[600px]:mt-10 max-[600px]:flex-col-reverse
+        ">
+          <div class="w-[40%] center max-[600px]:hidden">
+            <img
+              class="w-[70%]"
+              src="./images/illustration/foreigner-teacher-multilingual-philology-education-english-instructor-learn-writing-speak-online-school-university-languages-understanding-practice-vector-illustration_81894-.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-[50%] max-[600px]:w-full">
+            <h1 class="text-3xl font-semibold mb-5">
+              Taught English Communication
+            </h1>
+            <p class="text-lg text-justify">
+               •  Provided English language tutoring to Grade 6-8 students.
+              <br> •  Employed interactive teaching methods, including activities, games, and creative exercises.
+              <br> •  Focused on building student confidence and improving language skills through practical application.
+              <br> •  Encouraged active participation and self-expression in English.
+            </p>
           </div>
         </div>
-
-        <div class="w-full h-fit pt-10 pl-20">
-          <h1 class="text-2xl font-bold">WeVOIS as a state ambassador</h1>
-          <p class="text-md w-1/2 mt-3">
-            I led a collaborative e-waste collection and recycling project with
-            WeVOIS, a Jaipur-based startup, as a State Ambassador, furthering my
-            involvement in the Swachhta Saarthi Fellowship program. During the
-            e-waste collection drive, we successfully collected 250 kg of
-            e-waste, raising awareness about the importance of proper electronic
-            waste disposal and recycling. It contributed to environmental
-            sustainability but also engaged the community in responsible waste
-            management practices. By organizing workshops and outreach
-            activities, I aimed to educate participants on the dangers of
-            e-waste and promote sustainable solutions for managing electronic
-            waste effectively.
-          </p>
-
-          <div class="swiper w-[80vw] mt-10 p-20">
-            <div class="swiper-wrapper items-center">
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/wevois/wevois-1_page-0001.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/wevois/wevois-2.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+        <div class="px-36 mt-10 max-[600px]:px-5">
+          <div
+            class="w-full flex gap-10 justify-evenly overflow-scroll overflow-y-hidden scrollhidden"
+          >
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh]     thumbnail        max-[600px]:h-[15vh] object-cover"
+              src="./images/English-photos/english-1.jpeg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh]     thumbnail        max-[600px]:h-[15vh] object-cover"
+              src="./images/English-photos/english-2.jpeg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh]     thumbnail        max-[600px]:h-[15vh] object-cover"
+              src="./images/English-photos/english-3.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+          
+        <div class="center w-full mt-20 px-20 max-[600px]:px-5 max-[600px]:mt-10 max-[600px]:flex-col-reverse">
+          <div class="w-[50%] max-[600px]:w-full">
+            <h1 class="text-3xl font-semibold mb-5">
+              WeVOIS as a state ambassador
+            </h1>
+            <p class="text-lg text-justify">
+             •  Collaborated with WeVOIS, a Jaipur-based startup, to lead a successful e-waste collection drive.
+             <br> •  Collected 250 kg of e-waste, raising awareness about proper electronic waste disposal.
+             <br> •  Contributed to environmental sustainability and engaged the community in responsible waste management.
+             <br> •  Conducted workshops and outreach activities to educate participants about the dangers of e-waste and promote sustainable solutions.
+            </p>
+          </div>
+          <div class="w-[40%] center max-[600px]:hidden">
+            <img
+              class="w-[60%]"
+              alt=""
+              src="./images/illustration/ambassador-concept-illustration_114360-7557.avif"
+            />
+          </div>
+        </div>
+        <div class="px-36 mt-10 max-[600px]:px-5">
+          <div
+            class="w-full flex justify-evenly gap-10 overflow-scroll overflow-y-hidden scrollhidden"
+          >
+            <img
+              class="w-[50vh] h-[50vh] max-[600px]:w-[25vh]      thumbnail       max-[600px]:h-[20vh] object-cover"
+              src="./images/wevois/wevois-1_page-0001.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[50vh] max-[600px]:w-[25vh]     thumbnail        max-[600px]:h-[20vh] object-cover"
+              src="./images/wevois/wevois-2.png"
+              alt=""
+            />
           </div>
         </div>
       </main>
 
-      <footer class="bg-black text-white py-8">
+      <footer class="bg-black mt-10 text-white py-8">
         <div
           class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 md:p-10"
         >
           <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-0">A.S</h1>
           <div
-            class="space-y-2 md:space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center"
+            class="flex items-center justify-center text-2xl gap-6 "
           >
-          <a href="mailto:amanajaymona@gmail.com">amanajaymona@gmail.com</a>
-            <a href="https://www.instagram.com/ambivertsam7?igsh=anp2aTRiMm1nZDV0">Instagram</a>
-            <a href="https://www.linkedin.com/in/aman-semalty-42b9701ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?hl=en&user=frxtiNcAAAAJ">Google Scholar</a>
+            <a href="mailto:amanajaymona@gmail.com"><i class="ri-mail-fill"></i></a>
+            <a
+              href="https://www.instagram.com/ambivertsam7/profilecard/?igsh=MW9yMXhkNGliN2V0eQ=="
+              ><i class="ri-instagram-fill"></i></a
+            >
+            <a
+              href="https://www.linkedin.com/in/aman-semalty-42b9701ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              ><i class="ri-linkedin-fill"></i></a
+            >
+            <a
+              href="https://scholar.google.com/citations?hl=en&user=frxtiNcAAAAJ"
+              ><i class="ri-google-fill"></i></a
+            >
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+      integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+      integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://unpkg.com/textillate@0.4.1/jquery.textillate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="./script.js"></script>
-
   </body>
 </html>

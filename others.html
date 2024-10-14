@@ -1,136 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aman Portfolio</title>
 
-    <link rel="shortcut icon" href="./images/images.jpg" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/lenis@1.1.13/dist/lenis.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="font-sans">
-      <header class="bg-white shadow">
-        <div class="container mx-auto flex justify-between items-center p-4 md:p-6">
-          <h1 class="text-xl font-bold">A.S</h1>
-          <nav class="hidden md:flex space-x-4 font-medium">
-            <a id="home-link" href="index.html" class="text-gray-700 hover-underline-animation">Home</a>
-            <a id="community-services-link" href="communityServices.html" class="text-gray-700 hover-underline-animation">Community-Services</a>
-            <a id="awards-link" href="awards.html" class="text-gray-700 hover-underline-animation">Awards & Achievements</a>
-            <a id="academics-link" href="academics.html" class="text-gray-700 hover-underline-animation">Academics</a>
-            <a id="professional-enrichment-link" href="Professional-Enrichment.html" class="text-gray-700 hover-underline-animation">Professional-Enrichment</a>
-            <a id="others-link" href="others.html" class="text-gray-700 hover-underline-animation">Others</a>
-          </nav>
-          <a href="mailto:amanajaymona@gmail.com" style="text-decoration: none;">
-            <button class="bg-yellow-400 text-black px-4 py-2 rounded">
-              Let's Talk.
-            </button>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman Portfolio</title>
+
+  <link rel="shortcut icon" href="./images/images.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="fullscreen-modal" class="fullscreen-modal">
+    <span class="close">&times;</span>
+    <img id="fullscreen-image" class="fullscreen-image" />
+  </div>
+  <div id="loader">
+    <div class="loader-icon"></div>
+  </div>
+  <div  id="scroll-to-top" data-cursor-text="Top Page" class="fixed bg-yellow-500 text-black center h-10 w-10 right-5 bottom-5 rounded-full ">
+    <i class="ri-arrow-up-line"></i>
+  </div>
+  <div class="font-sans">
+    <header class="shadow ">
+      <div class="container  mx-auto flex justify-between items-center p-4 md:p-6 max-[600px]:hidden">
+        <h1 class="text-xl font-bold">A.S</h1>
+        <nav class="flex gap-16 font-medium ">
+          <a id="home-link" href="index.html" class="text-gray-700 hover-underline-animation">Home</a>
+          <a id="community-services-link" href="communityServices.html"
+            class="text-gray-700 hover-underline-animation">Community-Services</a>
+          <a id="awards-link" href="awards.html" class="text-gray-700 hover-underline-animation">Awards &
+            Achievements</a>
+
+          <a id="others-link" href="others.html" class="text-gray-700 hover-underline-animation">Others</a>
+        </nav>
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+            Download CV
+          </button>
+      
+
+      </div>
+      <div class="min-[600px]:hidden flex items-center justify-between p-4">
+        <h1 class="text-xl font-bold">A.S</h1>
+        <div class="center">
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+            Download CV
+          </button>
+          <i id="menu-icon" class="text-3xl ml-2 ri-menu-line cursor-pointer"></i>
         </div>
-      </header>
-
-      <main class="container mx-auto py-8 md:py-16">
-        <h1 class="text-4xl font-bold text-center">Other Notable Achievements</h1>
-        <div class="w-full h-fit pt-10 pl-20">
-          <h1 class="text-2xl font-bold">
-            Additional Achievements & Certifications
-          </h1>
-
-
-          <p class="text-md w-1/2 mt-3">
-            <ul class="w-1/2 ml-5 list-disc">
-              <li>Awarded Life Membership of Vigyan Dham (State of the art Innovation, Science & Technology Lab) by UCOST, Government of Uttarakhand Dehradun</li>
-              <li>E-Content Creator: Developed content for peers</li>
-              <li>
-                Peer tutoring for SAT preparation: Tutoring peers for SAT exam preparation
-              </li>
-  
-              <li>Skills: Proficient in Power BI, Canva, and Excel</li>
-              <li>
-                Languages: Hindi (Native), English (Fluent), Japanese (Beginner-N5). 
-                    Completed Clever Harvey's Junior MBA with courses in marketing (Puma campaign), technology (community app), entrepreneurship (start-up idea), and data analytics (Samsonite project)
-              </li>
-            </ul>
-
-            </p>
-
-          <div class="swiper w-[80vw] mt-10 p-20">
-            <div class="swiper-wrapper items-center">
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/others/WhatsApp Image 2024-10-05 at 02.56.51_b296b68e.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide w-[20vw] h-[40vh]">
-                <img
-                  class="w-full h-full object-cover"
-                  src="./images/others/Introduction To Japanese Language And Culture_page-0001.jpg"
-                  alt=""
-                />
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
+      </div>
+    </header>
+    <div id="mobile-menu" class="min-[600px]:hidden fixed bg-[#151515] pb-10 text-white w-full top-[-100%] left-0 z-[99] transition-all duration-1000">
+      <div class="w-full flex items-center justify-end p-5 text-white">
+        <div id="close-icon" class="w-10 h-10 cursor-pointer">
+          <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(251,251,251,1)">
+            <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+          </svg>
         </div>
-      </main>
-
-      <footer class="bg-black text-white py-8">
-        <div
-          class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 md:p-10"
-        >
-          <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-0">A.S</h1>
-          <div
-            class="space-y-2 md:space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center"
-          >
-          <a href="mailto:amanajaymona@gmail.com">amanajaymona@gmail.com</a>
-            <a href="https://www.instagram.com/ambivertsam7?igsh=anp2aTRiMm1nZDV0">Instagram</a>
-            <a href="https://www.linkedin.com/in/aman-semalty-42b9701ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?hl=en&user=frxtiNcAAAAJ">Google Scholar</a>
-          </div>
-        </div>
-      </footer>
+      </div>
+      <div class="w-full center flex-col text-4xl gap-5 uppercase">
+        <a id="home-link" href="index.html" class="">Home</a>
+        <a id="community-services-link" href="communityServices.html" class="">Services</a>
+        <a id="awards-link" href="awards.html" class="">Achievements</a>
+        <a id="others-link" href="others.html" class="">Others</a>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./script.js"></script>
+    <main class="container mb-20 ">
+      <div class="center w-full mt-10 px-20 max-[600px]:px-5 max-[600px]:mt-0 max-[600px]:flex-col-reverse
+      ">
+        <div class="w-[50%] max-[600px]:w-full">
+          <h1 class="text-3xl font-semibold mb-5">
+            Additional Achievements & Certifications
+          </h1>
+          <p class="text-lg text-justify">
+            • Awarded Life Membership of Vigyan Dham by UCOST, Government of
+            Uttarakhand, Dehradun.
+            <br />
+            • Developed e-content for peers as an E-Content Creator. <br />
+            • Provided peer tutoring for SAT exam preparation. <br />
+            • Proficient in Power BI, Canva, and Excel. <br />
+            • Languages: Hindi (Native), English (Fluent), Japanese (Beginner
+            - N5).
+          </p>
+        </div>
+        <div class="w-[40%] center max-[600px]:w-full">
+          <img class="  w-[80%] object-cover rounded-xl" alt=""
+            src="./images/illustration/online-certification-with-computer-book_23-2148571735.jpg" />
+        </div>
+      </div>
+      <div class="px-36 mt-10 max-[600px]:px-5">
+        <div class="w-full flex justify-evenly gap-10 overflow-scroll max-[600px]:flex-col overflow-y-hidden scrollhidden">
+          <img class=" thumbnail w-[40vh] h-[30vh] object-cover rounded-xl"
+            src="./images/others/WhatsApp Image 2024-10-05 at 02.56.51_b296b68e.jpg" alt="" />
+          <img class=" thumbnail w-[40vh] h-[30vh] object-cover rounded-xl"
+            src="./images/others/Introduction To Japanese Language And Culture_page-0001.jpg" alt="" />
+        </div>
+      </div>
+    </main>
 
-  </body>
+    <footer class="bg-black mt-10 text-white py-8">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 md:p-10"
+      >
+        <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-0">A.S</h1>
+        <div
+          class="flex items-center justify-center text-2xl gap-6 "
+        >
+          <a href="mailto:amanajaymona@gmail.com"><i class="ri-mail-fill"></i></a>
+          <a
+            href="https://www.instagram.com/ambivertsam7/profilecard/?igsh=MW9yMXhkNGliN2V0eQ=="
+            ><i class="ri-instagram-fill"></i></a
+          >
+          <a
+            href="https://www.linkedin.com/in/aman-semalty-42b9701ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            ><i class="ri-linkedin-fill"></i></a
+          >
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=frxtiNcAAAAJ"
+            ><i class="ri-google-fill"></i></a
+          >
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+    integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+    integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+  <script src="https://unpkg.com/textillate@0.4.1/jquery.textillate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>

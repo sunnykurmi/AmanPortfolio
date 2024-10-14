@@ -7,6 +7,10 @@
     <title>Aman Portfolio</title>
     <link rel="shortcut icon" href="./images/images.jpg" type="image/x-icon" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://unpkg.com/lenis@1.1.13/dist/lenis.css"
     />
@@ -33,13 +37,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="font-sans">
-      <header class="bg-white shadow">
+    <div id="fullscreen-modal" class="fullscreen-modal">
+      <span class="close">&times;</span>
+      <img id="fullscreen-image" class="fullscreen-image" />
+    </div>
+
+
+    <div id="loader">
+      <div class="loader-icon"></div>
+    </div>
+    <div  id="scroll-to-top" data-cursor-text="Top Page" class="fixed bg-yellow-500 text-black center h-10 w-10 right-5 bottom-5 rounded-full ">
+      <i class="ri-arrow-up-line"></i>
+    </div>
+    <div class="font-sans overflow-x-hidden">
+      <header class="shadow">
         <div
-          class="container mx-auto flex justify-between items-center p-4 md:p-6"
+          class="container mx-auto flex justify-between items-center p-4 md:p-6 max-[600px]:hidden"
         >
           <h1 class="text-xl font-bold">A.S</h1>
-          <nav class="hidden md:flex space-x-4 font-medium">
+          <nav class="flex gap-16 font-medium">
             <a
               id="home-link"
               href="index.html"
@@ -58,18 +74,7 @@
               class="text-gray-700 hover-underline-animation"
               >Awards & Achievements</a
             >
-            <a
-              id="academics-link"
-              href="academics.html"
-              class="text-gray-700 hover-underline-animation"
-              >Academics</a
-            >
-            <a
-              id="professional-enrichment-link"
-              href="Professional-Enrichment.html"
-              class="text-gray-700 hover-underline-animation"
-              >Professional-Enrichment</a
-            >
+
             <a
               id="others-link"
               href="others.html"
@@ -77,13 +82,50 @@
               >Others</a
             >
           </nav>
-          <a href="mailto:amanajaymona@gmail.com" style="text-decoration: none">
+          <button class="bg-yellow-400 text-black px-4 py-2 rounded">
+            Download CV
+          </button>
+        </div>
+        <div class="min-[600px]:hidden flex items-center justify-between p-4">
+          <h1 class="text-xl font-bold">A.S</h1>
+          <div class="center">
             <button class="bg-yellow-400 text-black px-4 py-2 rounded">
-              Let's Talk.
+              Download CV
             </button>
-          </a>
+            <i
+              id="menu-icon"
+              class="text-3xl ml-2 ri-menu-line cursor-pointer"
+            ></i>
+          </div>
         </div>
       </header>
+      <div
+        id="mobile-menu"
+        class="min-[600px]:hidden fixed bg-[#151515] pb-10 text-white w-full top-[-100%] left-0 z-[99] transition-all duration-1000"
+      >
+        <div class="w-full flex items-center justify-end p-5 text-white">
+          <div id="close-icon" class="w-10 h-10 cursor-pointer">
+            <svg
+              class="w-full h-full"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="rgba(251,251,251,1)"
+            >
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="w-full center flex-col text-4xl gap-5 uppercase">
+          <a id="home-link" href="index.html" class="">Home</a>
+          <a id="community-services-link" href="communityServices.html" class=""
+            >Services</a
+          >
+          <a id="awards-link" href="awards.html" class="">Achievements</a>
+          <a id="others-link" href="others.html" class="">Others</a>
+        </div>
+      </div>
 
       <main class="container mx-auto py-8 md:py-16">
         <section id="home" class="mb-16">
@@ -95,22 +137,22 @@
               class="w-48 h-48 md:w-72 md:h-72 bg-yellow-400 rounded-full overflow-hidden mb-6 md:mb-0"
             >
               <img
-                src="./images/IMG20240614175239.jpg"
+                src="./images/main-portfolio-removebg-preview.png"
                 alt="Aman Semalty"
-                class="rounded-full w-full h-full object-cover scale-x-[-1]"
+                class="  rounded-full w-full h-full object-contain"
               />
             </div>
             <div class="flex flex-col justify-start items-start md:w-1/2 p-4">
               <h2 class="text-3xl md:text-4xl font-bold mb-4 text-left">
-                I'm Aman Semalty—
+                I'm Aman Semalty
               </h2>
-              <h2 class="text-3xl md:text-2xl font-bold mb-4 text-left w-[80%]">
+              <h2
+                class="font-medium text-3xl md:text-2xl text-justify mb-4  w-[80%] max-[600px]:text-lg"
+              >
                 Witty enough to crack a joke, smart enough to back it up, and
                 jolly enough to enjoy the ride!
               </h2>
-              <!-- <p class="text-lg md:text-xl mb-4">
-                Designer • Figma • Developer
-              </p> -->
+
               <div
                 class="space-y-2 md:space-y-0 md:space-x-4 flex flex-col md:flex-row"
               >
@@ -131,17 +173,17 @@
             </div>
           </div>
         </section>
-        <section id="services" class="mb-16 h-full flex p-20">
-          <div class="w-1/2 h-ful">
+        <section id="services" class="mb-16 h-full gap-10 flex p-20 max-[600px]:p-0 max-[600px]:gap-0 max-[600px]:flex-col">
+          <div class="w-[40%] h-full max-[600px]:w-full">
             <img
-              class="w-[40vh] h-[60vh] m-auto object-cover scale-x-[-1] shadow-xl"
+              class="w-[50vh] h-[60vh] m-auto object-cover  scale-x-[-1] shadow-xl max-[600px]:w-full"
               src="./images/portrait.jpg"
               alt=""
             />
           </div>
-          <div class="w-1/2 h-full">
-            <h1 class="text-4xl mb-4 font-semibold">About My-Self</h1>
-            <p class="font-medium">
+          <div class="w-1/2 h-full max-[600px]:w-full">
+            <h1 class="text-4xl mb-4 font-semibold max-[600px]:mt-2 max-[600px]:text-3xl max-[600px]:text-center">A Bit About Me</h1>
+            <p class="text-lg font-normal text-justify max-[600px]:text-lg max-[600px]:p-5">
               The past four years have transformed me from a carefree kid into a
               more grounded semi-adult. This website showcases a tapestry of my
               significant experiences and achievements, each thread telling part
@@ -164,39 +206,184 @@
         </section>
 
         <section id="portfolios" class="mb-16">
-          <h3 class="text-2xl md:text-4xl font-bold mb-8 text-center">
-            Published Books & Contributions
+          <h3 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Research & Publications
           </h3>
 
-          <div class="w-full h-fit p-10 flex">
-            <div class="book-img w-1/2 h-fit">
+          <div class="w-full h-fit p-10 flex gap-10 max-[600px]:flex-col max-[600px]:p-0 max-[600px]:gap-0">
+            <div class="book-img w-[40%] h-fit max-[600px]:w-full">
               <img
-                class="w-[45vh] h-[60vh] m-auto"
+                class="w-[50vh] h-[70vh] m-auto object-cover thumbnail shadow-xl"
                 src="./images/book cover page .jpg"
                 alt=""
               />
             </div>
 
-            <div class="book-content w-1/2">
-              <h4 class="text-2xl font-bold">On Your MARKS, Get SAT, Go!</h4>
-              <h4 class="text-2xl font-bold mt-2">
-                (The Journey: Academics, SAT to My Portfolio)
-              </h4>
-              <p class="font-semibold w-[60%] text-start m-auto mt-5">
-                This book is a memoir that details a teens’ journey and life
-                learning experiences. It is a simple, powerful and motivating
-                journey of self-discovery. "Every one of us has something to
-                offer, lessons to learn, and wisdom to share. Life is not a
-                competition of grand stories but a celebration of the simple
-                moments that make each of us unique. So, my dear friends, it is
-                time to turn the page. I hope you discover something interesting
-                that will make you smile." "I hope that somewhere in this
-                memoir, you will find reflections that resonate with your own
-                life experiences.”
+            <div class="book-content w-1/2 max-[600px]:w-full max-[600px]:p-5">
+              <h4 class="text-3xl font-bold">On Your MARKS, Get SAT, Go!!</h4>
+
+              <p class="font-normal text-xl mt-5 text-justify">
+                <span class="font-semibold text-2xl"> Theme </span>
+                <br />
+                A teen’s journey through life, filled with meaningful learning
+                experiences and self-discovery. <br />
+                <br />
+                <span class="mt-5 font-semibold text-2xl"> Tone </span>
+                <br />
+                Simple, powerful, and motivating, designed to inspire readers.
+                <br /><br />
+                <span class="mt-5 font-semibold text-2xl"> Key Message </span>
+                <br />
+                "Everyone has something to offer: lessons to learn, wisdom to
+                share." Life is not about competing for grand stories but
+                celebrating the small moments that make us unique.
+                <br /><br />
+                <span class="mt-5 font-semibold text-2xl">
+                  Encouragement to Readers
+                </span>
+                <br />
+                "It is time to turn the page. Discover something that will make
+                you smile." Readers are invited to find reflections in the
+                memoir that resonate with their own life experiences.
               </p>
             </div>
           </div>
         </section>
+
+        <div class="center w-full mt-20 px-20 justify-evenly max-[600px]:px-5 max-[600px]:mt-0 max-[600px]:flex-col-reverse">
+          <div class="w-[50%] max-[600px]:w-full">
+            <h1 class="text-3xl font-semibold mb-5">Academic Achievements</h1>
+            <p class="text-lg text-justify">
+              •<span class="font-semibold"> Junior High School: </span>
+              Graduated with a 4.0 GPA <br />
+              <br />
+              •<span class="font-semibold"> Current Enrollment: </span> Grade 12
+              (Commerce with Applied Mathematics) at Rainbow Public School,
+              Madhi Chauras, Srinagar Garhwal, Uttarakhand <br />
+              <br />
+              •<span class="font-semibold"> Academic Interests: </span> Pursuing
+              higher education in Business Administration with a focus on
+              Microeconomics, Macroeconomics, Entrepreneurship, and Global
+              Business
+            </p>
+          </div>
+          <div class="w-[40%] center max-[600px]:w-full">
+            <img
+              class="rounded-xl w-[90%]"
+              alt=""
+              src="./images/illustration/hand-drawn-flat-design-mba-illustration-illustration_23-2149331623.avif"
+            />
+          </div>
+        </div>
+
+        <div class="center w-full mt-10 px-20 justify-evenly max-[600px]:px-5 max-[600px]:mt-0 max-[600px]:flex-col">
+          <div class="w-[40%] center max-[600px]:w-full">
+            <img
+              class="rounded-xl w-[90%]"
+              alt=""
+              src="./images/illustration/business-analysis-concept-with-magnifying-glass-examining_676904-17030.jpg"
+            />
+          </div>
+          <div class="w-[50%] max-[600px]:w-full">
+            <h1 class="text-3xl font-semibold mb-5">Research interests</h1>
+            <p class="text-lg text-justify">
+              <span class="font-semibold"> • Management: </span> Exploring
+              various aspects of organizational behavior, leadership, strategy,
+              and innovation.
+              <br />
+              <br /><span class="font-semibold">
+                • Intellectual Property Rights (IPR):
+              </span>
+              Investigating the legal and ethical implications of intellectual
+              property protection, including patents, copyrights, and
+              trademarks.
+              <br />
+              <br /><span class="font-semibold">
+                • Emerging Technologies:
+              </span>
+              Analyzing the impact and applications of cutting-edge technologies
+              such as artificial intelligence, blockchain, and biotechnology.
+              <br />
+              <br /><span class="font-semibold">
+                • Environmental Sustainability:
+              </span>
+              Examining strategies for sustainable development, resource
+              conservation, and mitigating climate change.
+              <br />
+              <br /><span class="font-semibold">
+                • E-Waste and Solid Waste Management:
+              </span>
+              Developing solutions for the effective management and recycling of
+              electronic waste and solid waste.
+              <br />
+              <br /><span class="font-semibold"> • Circular Economy: </span>
+              Promoting a circular economic model that minimizes waste and
+              maximizes resource efficiency.
+            </p>
+          </div>
+        </div>
+
+        <div class="center w-full mt-20 px-20 max-[600px]:px-5 max-[600px]:mt-0 max-[600px]:flex-col-reverse">
+          <div class="w-[50%] max-[600px]:w-full">
+            <h1 class="text-3xl font-semibold mb-5">
+              Internship & Participation
+            </h1>
+            <p class="text-lg text-justify">
+              • Conducted extensive research in management studies, contributing
+              to multiple research projects across various domains.
+              <br />
+              • Authored three conference papers, presented at national and
+              international conferences. <br />
+              • Wrote six research articles, with four successfully published in
+              reputed journals and two currently under review for future
+              publication. <br />
+              • Gained hands-on experience in data analysis, literature review,
+              and academic writing, refining skills in research methodologies
+              and collaborative projects. <br />
+              • Worked closely with faculty and research scholars to explore
+              innovative solutions in management, sustainability, and industrial
+              applications.
+            </p>
+          </div>
+          <div class="w-[40%] center max-[600px]:w-full">
+            <img
+              class="w-[90%] rounded-xl"
+              src="./images/illustration/internship-job-concept-illustration_23-2148754785.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div data-cursor-text="Drag" class="cursor-move px-36 mt-10 max-[600px]:px-5">
+          <div
+            class="w-full flex gap-10 overflow-scroll overflow-y-hidden scrollhidden"
+          >
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] object-cover thumbnail rounded-xl"
+              src="./images/internship/inter-1.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] object-cover thumbnail rounded-xl"
+              src="./images/internship/inter-2.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] object-cover thumbnail rounded-xl"
+              src="./images/internship/inter-3.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] object-cover thumbnail rounded-xl"
+              src="./images/internship/inter-4.jpg"
+              alt=""
+            />
+            <img
+              class="w-[40vh] h-[30vh] max-[600px]:w-[20vh] max-[600px]:h-[15vh] object-cover thumbnail rounded-xl"
+              src="./images/internship/inter-5_page-0001.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </main>
 
       <footer class="bg-black text-white py-8">
@@ -204,22 +391,22 @@
           class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 md:p-10"
         >
           <h1 class="text-2xl md:text-4xl font-bold mb-4 md:mb-0">A.S</h1>
-          <div
-            class="space-y-2 md:space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center"
-          >
-            <a href="mailto:amanajaymona@gmail.com">amanajaymona@gmail.com</a>
+          <div class="flex items-center justify-center text-2xl gap-6">
+            <a href="mailto:amanajaymona@gmail.com"
+              ><i class="ri-mail-fill"></i
+            ></a>
             <a
               href="https://www.instagram.com/ambivertsam7/profilecard/?igsh=MW9yMXhkNGliN2V0eQ=="
-              >Instagram</a
-            >
+              ><i class="ri-instagram-fill"></i
+            ></a>
             <a
               href="https://www.linkedin.com/in/aman-semalty-42b9701ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              >LinkedIn</a
-            >
+              ><i class="ri-linkedin-fill"></i
+            ></a>
             <a
               href="https://scholar.google.com/citations?hl=en&user=frxtiNcAAAAJ"
-              >Google Scholar</a
-            >
+              ><i class="ri-google-fill"></i
+            ></a>
           </div>
         </div>
       </footer>
